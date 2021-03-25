@@ -64,7 +64,7 @@ st.write("Roughly, 447 reviewers in the history of Pitchfork, Now we will use th
          "to grab the data")
 
 def get_gender():
-    client = NamsorClient("1d3f59671191623ca94925199d974856")
+    client = NamsorClient("")
     gender_container = []
     for index, row in unique_reviewers.iterrows():
         first_name = row['pitchfork_author_first_name']
@@ -83,7 +83,7 @@ def get_gender():
 
 
 def get_race_ethnicity():
-    client = NamsorClient("1d3f59671191623ca94925199d974856")
+    client = NamsorClient("")
     ethnicity_container = []
     for index, row in unique_reviewers.iterrows():
         first_name = row['pitchfork_author_first_name']
