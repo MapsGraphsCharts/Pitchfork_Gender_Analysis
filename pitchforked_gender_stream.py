@@ -68,10 +68,15 @@ drop_cols = ['nh_white',
 
 pitchfork_dataset.drop(drop_cols, inplace=True, axis=1)
 
-pitchfork_dataset = pitchfork_dataset.merge(pitchfork_authors)
+st.write(pitchfork_dataset)
+pitchfork_dataset = pitchfork_dataset.merge(pitchfork_authors, on='pitchfork_author')
+st.write(pitchfork_dataset)
 
-drop_cols = ['pitchfork_author_first_name',
-             'pitchfork_author_last_name',
+
+drop_cols = ['pitchfork_author_first_name_y',
+             'pitchfork_author_last_name_y',
+             'pitchfork_author_last_name_x',
+             'pitchfork_author_first_name_x',
              'genderscale',
              'gender_score',
              'race_ethnicity_alt',
@@ -79,6 +84,7 @@ drop_cols = ['pitchfork_author_first_name',
 pitchfork_dataset.drop(drop_cols, inplace=True, axis=1)
 pitchfork_dataset.reset_index()
 pd.to_datetime(pitchfork_dataset['pitchfork_review_date'])
+
 
 #                                        SETUP SIDEBAR & GLOBAL FILTERS
 
