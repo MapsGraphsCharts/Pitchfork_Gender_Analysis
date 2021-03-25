@@ -21,8 +21,8 @@ st.write("""
             In February 2020 I decided it would be a fun project to 'web-scrape' every historical
             Pitchfork review to look for interesting trends in music.            
             
-            While reviewing the initial dataset, my wife posed a great question..."How many of these reviews do you 
-            think were written by men?" With a bit of python skill, the reviewers names, and some free time
+            While reviewing the initial dataset, the thought came to mind..."How many of these reviews were possibly 
+            written by men and how many by women?" With a bit of python skill, the reviewers names, and some free time
             I set out to answer that question with my HR analyst hat on...
             
             As this is an article on Pitchfork and not coding, I only want to make a brief mention of how gender/ethnicity was 
@@ -202,6 +202,7 @@ gender_eth_plot = alt.Chart(ethnicity_by_year).mark_line(clip=True).encode(
     color=alt.Color('race_ethnicity', legend=alt.Legend(title='Gender')),
     strokeDash='race_ethnicity',
     tooltip=['total_reviews', 'pitchfork_review_date_year'],
+    legend=alt.Legend()
     ).properties(title='Reviews per year by Gender')
 
 
@@ -233,7 +234,7 @@ st.write("""
          
          All in all, two things are very evident.
          
-         -  Strong social movements ABSOLUTELY work.
+         -  Strong social movements absolutely work when it comes forcing ahead diversity measures.
          -  Large faceless corporate entities such as Conde Nast are much more prone to these movements than small 
             independent businesses who need not react as quickly.
          
