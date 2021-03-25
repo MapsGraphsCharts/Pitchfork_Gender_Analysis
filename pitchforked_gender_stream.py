@@ -202,7 +202,7 @@ gender_eth_plot = alt.Chart(ethnicity_by_year).mark_line(clip=True).encode(
     color=alt.Color('race_ethnicity', legend=alt.Legend(title='Gender')),
     strokeDash='race_ethnicity',
     tooltip=['total_reviews', 'pitchfork_review_date_year'],
-    ).properties(title='Reviews per year by Gender')
+    ).properties(title='Reviews per year by Ethnicity')
 
 
 
