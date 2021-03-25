@@ -245,7 +245,7 @@ st.write("""
 
 st.header("Software Utilized")
 st.write("""
-        -   Streamlit (bless this amazing new library)
+        -   Streamlit (What is allowing you to see this)
         -   Scrapy (webscraping in python)
         -   Python/Pandas (number crunching)
         -   Altair (Viz)
