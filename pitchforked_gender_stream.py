@@ -42,7 +42,7 @@ st.header("Gender Analysis")
 # Functions
 
 def load_data(path):
-    data = pd.read_pickle(path)
+    data = pd.read_csv(path)
     return data
 
 
