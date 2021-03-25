@@ -49,8 +49,9 @@ def load_data(path):
 #                                       LOAD AND CLEAN DATASET
 
 
-pitchfork_authors = load_data("/data/pitchfork_authors")
-pitchfork_dataset = load_data("/data/data_original/pitchforked_clean")
+pitchfork_authors = load_data("pitchfork_authors")
+pitchfork_dataset = load_data("pitchforked_clean")
+
 
 drop_cols = ['nh_white',
              'nh_black',
