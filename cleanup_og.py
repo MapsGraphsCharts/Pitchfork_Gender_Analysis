@@ -15,7 +15,7 @@ st.image('/home/tim/dev/notebooks/pitchforked/images/tool-4958040_1920.jpg',
 # Functions
 
 def load_data():
-    data = pd.read_pickle("/home/tim/dev/streamlit_projects/pitchforked/data/data_original/pitchforked_clean")
+    data = pd.read_pickle("/data/data_original/pitchforked_clean")
     return data
 
 
@@ -115,8 +115,8 @@ def get_race_ethnicity():
 
 st.write(unique_reviewers)
 
-pd.to_pickle(unique_reviewers, "/home/tim/dev/streamlit_projects/pitchforked/data/pitchfork_authors")
+pd.to_pickle(unique_reviewers, "/data/pitchfork_authors")
 
-test = pd.read_pickle("/home/tim/dev/streamlit_projects/pitchforked/data/pitchfork_authors")
+test = pd.read_pickle("/data/pitchfork_authors")
 
 st.write(test)
