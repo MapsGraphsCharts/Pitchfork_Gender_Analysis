@@ -3,9 +3,9 @@ import pandas as pd
 import numpy as np
 import altair as alt
 
-st.title('Pitchforked')
-st.image('/home/tim/dev/notebooks/pitchforked/images/tool-4958040_1920.jpg',
-         caption="Empirically visualizing gender & racial disparity in the music review business.")
+# st.title('Pitchforked')
+# st.image('/home/tim/dev/notebooks/pitchforked/images/tool-4958040_1920.jpg',
+#          caption="Empirically visualizing gender & racial disparity in the music review business.")
 st.header("Premise")
 st.write("""
             As a big indie music fan, I'm no stranger to Pitchfork, the world's largest independent music review 
