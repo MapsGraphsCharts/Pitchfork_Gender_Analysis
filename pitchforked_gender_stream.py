@@ -156,7 +156,7 @@ st.altair_chart(unique_genders_plot, use_container_width=True)
 st.write('The table below is sampling 200 names with a gender confidence of 90 or greater, so that you may agree/disagree with '
          'the classifications, feel free to increase/decrease the gender probability to update charts.')
 st.write(filtered_confidence[['pitchfork_author', 'likelygender', 'probabilitycalibrated']].drop_duplicates(subset=['pitchfork_author'])
-         .sample(200)
+         .sample(200, replace=True)
          .sort_values(by=['likelygender'])
          .reset_index(drop=True))
 
