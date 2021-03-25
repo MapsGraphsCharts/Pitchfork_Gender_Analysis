@@ -68,9 +68,8 @@ drop_cols = ['nh_white',
 
 pitchfork_dataset.drop(drop_cols, inplace=True, axis=1)
 
-st.write(pitchfork_dataset)
 pitchfork_dataset = pitchfork_dataset.merge(pitchfork_authors, on='pitchfork_author')
-st.write(pitchfork_dataset)
+
 
 
 drop_cols = ['pitchfork_author_first_name_y',
