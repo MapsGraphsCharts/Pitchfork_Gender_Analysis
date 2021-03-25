@@ -7,8 +7,7 @@ cwd = os.getcwd()
 image_path = os.path.join(cwd, "tool-4958040_1920.jpg")
 
 st.title('Pitchforked')
-st.image(cwd, image_path,
-         caption="Empirically visualizing gender & racial disparity in the music review business.")
+st.image("tool-4958040_1920.jpg", caption="Empirically visualizing gender & racial disparity in the music review business.")
 st.header("Premise")
 st.write("""
             As a big indie music fan, I'm no stranger to Pitchfork, the world's largest independent music review 
