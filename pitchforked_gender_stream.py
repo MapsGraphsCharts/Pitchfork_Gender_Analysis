@@ -6,6 +6,13 @@ import os
 cwd = os.getcwd()
 image_path = os.path.join(cwd, "tool-4958040_1920.jpg")
 
+st.set_page_config(
+    page_title="Pitchforked",
+    page_icon="🧐",
+    initial_sidebar_state="expanded",
+
+
+
 st.title('Pitchforked')
 st.image("tool-4958040_1920.jpg", caption="Empirically visualizing gender & racial disparity in the music review business.")
 st.header("Premise")
