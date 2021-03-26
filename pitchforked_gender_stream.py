@@ -10,6 +10,7 @@ st.set_page_config(
     page_title="Pitchforked",
     page_icon="🧐",
     initial_sidebar_state="expanded",
+)
 
 
 
